@@ -22,25 +22,31 @@ html {
 .container {
     box-sizing: border-box;
     display: flex;
-    /*flex-wrap: wrap;*/
 }
 
 #logo-section {
     margin-left: auto;
     margin-right: auto;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 100px;
     width: 350px;
 }
 
 .logo-box {
-    width: 101%;
+    width: 100%;
     margin-top: 40px;
 }
 
 .logo-box > img {
     width: 100%;
+}
+
+.text-box {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
 }
 
 .text {
@@ -50,32 +56,67 @@ html {
     font-size: 8.5px;
     letter-spacing: 2px;
     font-family: helvetica;
+    color: #332d33;
+}
+
+.bookend1 {
+    width: 1.6%;
+}
+
+.bookend2 {
+    width: .7%;
+}
+
+#la {
+    width: 31%;
+    text-align: left;
+}
+
+#ny {
+    width: 25.35%;
+    text-align: left;
+}
+
+#nash {
+    width: 25.35%;
+    text-align: left;
 }
 
 .city {
     font-weight: regular;
-    width: 24.5%;
+    /*width: 28%;*/
+    /*text-align: left;*/
 }
 
 .email {
-    width: 22%;
+    width: 16%;
     font-weight: bold;
     text-align: right;
 }
 
 a {
   color: inherit;
-  text-decoration: inherit; 
+  text-decoration: inherit;
+  font-family: inherit;
+  color: inherit;
+  padding-right: 0;
+  margin-right: 0;
+  justify-content: space-between;
 }
 
 
 @media screen and (max-width: 460px) {
     #logo-section {
         width: 250px;
+        margin-top: 80px;
     }
     
     .text {
         font-size: 4.5px;
+    }
+
+    .logo-box {
+        margin-top: 40px;
     }
 }
 
